@@ -1,0 +1,39 @@
+{
+  "employees": [
+    {
+      "id": "1234",
+      "empName": "Jonny",
+      "designation": "SE"
+    },
+    {
+      "id": "4567",
+      "empName": "Tom",
+      "designation": "SSE"
+    },
+    {
+      "id": "8910",
+      "empName": "Kevin",
+      "designation": "TA"
+    },
+    {
+      "id": "12",
+      "empName": "brock",
+      "designation": "athlete"
+    },
+    {
+      "id": "157",
+      "empName": "abc",
+      "designation": "def"
+    },
+    {
+      "id": "12",
+      "empName": "sdf",
+      "designation": "CEO"
+    },
+    {
+      "id": "14",
+      "empName": "kitlw",
+      "designation": "hMA"
+    }
+  ]
+}
