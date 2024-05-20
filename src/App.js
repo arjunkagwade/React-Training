@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import FetchEmployees from './FetchEmployee';
+import UpdateEmployee from './UpdateEmployee';
+function Layout() {
+  return (
+    // <div>
+    //   <h4>Welcome to MyApp!!</h4>
+    //   <main>
+    //     <Outlet />  {/* Placeholder for child routes */}
+    //   </main>
+    // </div>
+    <>
+
+    </>
+  );
+}
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <Router>
+    //   <Link to="/Home">Home</Link>|
+    //   <Link to="/about">About</Link>
+    //   <Routes>
+    //     <Route path="/" element={<Layout />}> {/* Parent route with layout */}
+    //       <Route index element={<Home />} /> {/* Home route for exact path "/" */}
+    //       <Route path="about" element={<About />} />
+    //     </Route>
+    //   </Routes>
+    // </Router>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FetchEmployees />} />
+          <Route path="/update/:id" element={<UpdateEmployee />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
